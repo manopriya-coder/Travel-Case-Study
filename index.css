@@ -1,0 +1,133 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #050505;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+    }
+
+    .case-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .case-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .case-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .case-text h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #f5f5f5;
+    }
+
+    .case-text p {
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
+    .case-image {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .case-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #333;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    /* 📱 Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .case-section {
+    flex-direction: column;   /* Stack text & image vertically */
+    text-align: center;
+  }
+
+  .case-section:nth-child(even) {
+    flex-direction: column;   /* Override alternating layout */
+  }
+
+  .case-text {
+    padding: 10px;
+  }
+
+  .case-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .case-text p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .case-image {
+    padding: 10px;
+    height: 50%;
+  }
+
+  .case-image img {
+    max-width: 90%;  /* Scale down images */
+    height: 100%;
+}
+
+  footer {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+}
